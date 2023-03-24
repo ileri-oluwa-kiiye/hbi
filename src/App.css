@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.ctrlwidth{
+    max-width: 1400px;
+    margin: auto;
+}

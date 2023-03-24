@@ -1,0 +1,72 @@
+
+  
+  .preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px; 
+    height: 270px; 
+    border-radius: 50%;
+    margin-top: -140px;
+    color: white;
+    background-color: rgb(255, 255, 255, 0.9); 
+    animation: pulse 0.9s ease-in-out infinite; 
+  }
+  
+  .text {
+    font-family: 'YourFeminineFont', cursive; 
+    font-size: 30px; 
+    color: #ff70f0; 
+    animation: appear 0.5s linear; 
+  }
+
+  .preloader-container.show {
+    visibility: visible;
+    width: 100vw;
+    opacity: 1;
+  }
+  
+    
+  .preloader-container {
+    display: flex;
+    justify-content: center;
+    width: 0px;
+    overflow: hidden;
+    align-items: center;
+    opacity: 0.1;
+    height: 110vh;
+    z-index: 29320899;
+    position: fixed;
+    top: 0px;
+    background-color: black; /* adjust the background color to your liking */
+    transition: width 0.4s linear, opacity 0.2s linear;
+    /* the transition delay should be equal to the duration of the appear animation */
+  }
+  
+  
+  
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
